@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Configuration["FromMessage"]</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
